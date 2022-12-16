@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/getLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Location"
+            android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/openLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Log"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+</RelativeLayout>
